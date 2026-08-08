@@ -1,0 +1,158 @@
+/* Importation d'une police propre depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+
+/* La carte principale */
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background: #fff;
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Partie haute (Fond bleu) */
+.profile-card .image-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 140px;
+    width: 100%;
+    background-color: #4070f4;
+    border-radius: 24px 24px 0 0;
+}
+
+/* Conteneur de l'image de profil */
+.card-image {
+    position: relative;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 3px;
+    margin: 35px auto 0 auto;
+    border-bottom-color: #265df2;
+}
+
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+/* Partie basse (Texte, boutons, stats) */
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 155px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.description {
+    font-size: 14px;
+    color: #707070;
+    margin-bottom: 15px;
+}
+
+/* Boutons réseaux sociaux */
+.media-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.media-buttons .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.media-buttons .link:hover {
+    transform: scale(1.1);
+}
+
+/* Boutons principaux */
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.button {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 24px;
+    background-color: #4070f4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #265df2;
+}
+
+/* Barre de statistiques en bas */
+.analytics {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 15px;
+    border-top: 1px solid #e6e6e6;
+}
+
+.analytics .data {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #333;
+    font-size: 14px;
+}
+
+.analytics .data i {
+    font-size: 18px;
+}
